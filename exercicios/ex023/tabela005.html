@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .destaque {
+            background-color: greenyellow;
+        }
+
+        td:nth-child(3) {
+            text-align: center;
+        }
+
+        col.cnome {
+            background-color: rgb(39, 51, 51);
+        }
+
+        col.cgrupo {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="3">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Pronomes</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Mara</td>
+            <td>Ela/Dela</td>
+            <td>34</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Geórgia</td>
+            <td>Ela/Dela</td>
+            <td>23</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>Ele/Dele</td>
+            <td>29</td>
+            <td>Advogado</td>
+        </tr>
+        <tr>
+            <td>Márcia</td>
+            <td>Ela/Dela</td>
+            <td>42</td>
+            <td>Juíza</td>
+        </tr>
+        <tr class="destaque">
+            <td>Vanessa</td>
+            <td>Ela/Dela</td>
+            <td>26</td>
+            <td>Programadora</td>
+        </tr>
+        <tr>
+            <td>Ícaro</td>
+            <td>Ele/Dele</td>
+            <td>31</td>
+            <td>Jornalista</td>
+        </tr>
+    </table>
+</body>
+</html>
