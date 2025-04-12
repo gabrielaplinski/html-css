@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p><label for="iemail">E-mail:</label> 
+            <input type="email" name="email" id="iemail">
+        </p>
+        <p><label for="iconcordo">Concordo com os termos de adesão:</label> 
+            <input type="checkbox" name="concordo" id="iconcordo">
+        </p>
+        <p><label for="isenha">Senha:</label> 
+            <input type="password" name="senha" id="isenha">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+<!-- 
+https://www.google.com/search?q=LEGAL&oq=LEGAL&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQIxgnMgYIAhAjGCcyDQgDEAAYgwEYsQMYgAQyDQgEEC4YgwEYsQMYgAQyEAgFEC4YxwEYsQMY0QMYgAQyDQgGEAAYgwEYsQMYgAQyEAgHEAAYgwEYiwMYsQMYgAQyHAgIEC4YgwEYxwEYiwMYqAMYsQMY0QMY0gMYgAQyDQgJEC4YxwEY0QMYgATSAQc3NjRqMWo3qAIAsAIA&sourceid=chrome&ie=UTF-8
+
+IGUAL A
+
+https://www.google.com/search?q=LEGAL
+-->
