@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*Typical Device Breakpoints
+----------------------------
+Pequenas telas: max 639px 
+Celular: min 640px max 767px
+
+Tablet: min 768px max 1023px
+Desktop: min 1024px max 1279px
+Grandes telas: min 1280px max 1535px
+Telas gigantes: min 1536px
+*/
+
+@media screen and (min-width: 768px) {
+    span.material-symbols-outlined {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        max-width: 900px;
+    }
+}
