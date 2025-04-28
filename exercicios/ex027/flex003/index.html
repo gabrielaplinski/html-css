@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.superior {
+            background-color: rgb(239, 228, 255);
+            height: 100px;
+
+            display: flex;
+            /* flex-direction: column;
+            flex-wrap: wrap; SUBSTITUI POR SHORTHAND:*/
+            flex-flow: column wrap;
+        }
+
+        div.filhxs {
+            background-color: rgb(188, 255, 235);
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="superior">
+        <div class="filhxs">Exemplo de bloco A</div>
+        <div class="filhxs">Exemplo de bloco B</div>
+        <div class="filhxs">Exemplo de bloco C</div>
+        <div class="filhxs">Exemplo de bloco D</div>
+        <div class="filhxs">Exemplo de bloco E</div>
+        <div class="filhxs">Exemplo de bloco F</div>
+        <div class="filhxs">Exemplo de bloco G</div>
+    </div>
+</body>
+</html>
