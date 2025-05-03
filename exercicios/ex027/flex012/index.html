@@ -15,24 +15,33 @@
         div.item {
             background-color: rgb(188, 255, 235);
             border: 1px solid black;
-            text-align: center;
-
-            flex-basis: 350px;   
+            text-align: center;   
         }
 
         div#cx1 {
+            /*flex-grow: 0;
             flex-shrink: 3;
-            flex-grow: 0;
+            flex-basis: 200px;
+            
+            SHORTHAND:*/
+
+            flex: 0 3 200px;
         }
 
         div#cx2 {
+            /*flex-grow: 1;
             flex-shrink: 1;
-            flex-grow: 1;
+            flex-basis: 150px;*/
+
+            flex: 1 1 150px
         }
 
         div#cx3 {
-            flex-shrink: 1;
+            /*flex-shrink: 1;
             flex-grow: 8;
+            flex-basis: auto;*/
+
+            flex: 1 8 auto;
         }
     </style>
 </head>
