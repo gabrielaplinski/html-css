@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: rgb(239, 228, 255);
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: rgb(188, 255, 235);
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 350px;   
+        }
+
+        div#cx1 {
+            flex-shrink: 3;
+            flex-grow: 0;
+        }
+
+        div#cx2 {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#cx3 {
+            flex-shrink: 1;
+            flex-grow: 8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cx1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam et fugit perspiciatis necessitatibus voluptate facere earum in molestias praesentium officia, voluptatum architecto. Nesciunt cumque nam autem ad, nemo minus inventore!</div>
+        <div class="item" id="cx2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae temporibus aspernatur, culpa eos aliquid necessitatibus repellat cumque aperiam maiores magni dolore ipsam id sint harum repellendus, labore asperiores! Est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia animi nulla dolor excepturi asperiores iure consequuntur corporis earum, deserunt omnis ullam impedit amet sapiente? Commodi molestiae saepe iste aliquid voluptatum.</div>
+        <div class="item" id="cx3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate reprehenderit nobis obcaecati, amet pariatur suscipit accusamus sequi accusantium nesciunt error aut, neque sed dolores. Excepturi fuga saepe porro consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quo atque consequuntur nihil totam ipsum rem corrupti porro. Commodi aliquam eum eligendi numquam ipsum saepe enim necessitatibus ab reprehenderit hic?</div>
+    </div>
+</body>
+</html>
