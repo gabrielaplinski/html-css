@@ -11,16 +11,24 @@
 
         div.container {
             border: 2px solid rgb(4, 0, 255);
-            height: 250px;
+
 
             display: grid;
+
+            /*grid-template-rows: 100px 100px 100px;
             grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
-            gap: 10px;
-            align-items: normal;
-            justify-items: normal;
-            align-content: normal;
-            justify-content: normal;
+
+            SHORTHAND:*/
+            grid-template: 100px 100px 100px / auto auto auto;
+
+            /*align-items: stretch;
+            justify-items: center;
+            align-content: start;
+            justify-content: end;
+
+            SHORTHAND:*/
+            place-items: stretch center;
+            place-content: start end;
         }
 
         div.item {
@@ -38,6 +46,8 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
     </div>
 </body>
 </html>
